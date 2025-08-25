@@ -52,7 +52,7 @@ class MyClient(discord.Client):
                 "$Rumor\n"
             )
 
-        # Beer
+        # Time
         if message.content.startswith(('What time is it?', 'what time is it?')):
             await message.channel.send("It's time to get a watch!")
 
@@ -91,3 +91,4 @@ intents.message_content = True
 
 client = MyClient(intents=intents)
 client.run('')#Insert key
+
